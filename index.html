@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta http-equiv="imagetoolbar" content="no">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta    name="viewport"content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta content="email=no" name="format-detection"/>
+        <title>滴滴打车</title>
+        <link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/index.css" media="screen" title="no title" charset="utf-8">
+
+        <link rel="stylesheet" href="css/animate.min.css">
+        <script type="text/javascript">
+        (function(){
+            var resizeEvent =  'orientationchange' in window ? 'orientationchang' :'resize';
+            var rescale = function(){
+                document.documentElement.style.fontSize = document.documentElement.clientWidth/640 *40 +'px';
+            }
+            window.addEventListener(resizeEvent,rescale,false);
+            document.addEventListener('DOMContentLoaded',rescale,false);
+
+            if (document.documentElement.clientWidth/document.documentElement.clientHeight>0.62) {
+             document.documentElement.style.height=document.documentElement.clientWidth/0.62+ 'px';
+              document.documentElement.style.overflow="auto";
+
+         }
+        })();
+        </script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="audio">
+                <audio src="media/bg.mp3" autoplay="autoplay"loop="true"></audio>
+                <div class="a-vvv">
+                    <img class="a-img1"src="img/one_music.gif" alt="" />
+                    <img class="a-img2"src="img/btn_close_music.png" alt="" />
+
+                </div>
+
+            </div>
+            <div class="page" id="pages0">
+                <div class="inner">
+                    <div class="car">
+                        <img src="img/load-car.png" alt="">
+                    </div>
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="page" id="pages1">
+                <div class="inner">
+                    <section class="sec1">
+                        <img class="animated slideInDown "src="img/shipo.png" alt="" />
+                    </section>
+                    <section class="sec2">
+                        <img class="animated rotateIn"src="img/page_home_true.png" alt="" />
+                    </section>
+                    <section class="sec3">
+                        <img class=" animated fadeIn"src="img/page_home_intro.png" alt="" />
+                    </section>
+                    <section class="sec4">
+                        <img src="img/page_home_car.png" alt="" />
+                    </section>
+                    <section class="sec5">
+                        <img class="animated fadeIn"src="img/page_home_btn.png" alt="" />
+                    </section>
+                </div>
+            </div>
+            <div class="page" id="pages2">
+                <div class="inner">
+                    <section class="p1-img">
+                        <img src="img/page_level1_icon.jpg" alt="" />
+                    </section>
+                    <section class="p2-img">
+                        <img src="img/page_cai_collection2.png" alt="" />
+                        <span class="sp1"></span>
+                        <span class="sp2"></span>
+                    </section>
+                    <section class="p3-img">
+                        <img src="img/page_level1_list.jpg" alt="" />
+                        <span class="cl1"></span>
+                        <span class="cl2"></span>
+                        <span class="cl3"></span>
+                        <span class="cl4"></span>
+                        <span class="cl5"></span>
+                        <span class="cl6"></span>
+                        <span class="cl7"></span>
+                        <span class="cl8"></span>
+                    </section>
+                </div>
+            </div>
+            <div class="page" id="pages3">
+                <div class="inner">
+                    <div class="fail">
+                        <h4>单身怪我喽?<br>不拼哪来的爱情!</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="page" id="pages4">
+                <div class="inner">
+                    <div class="shine">
+                    </div>
+                    <div class="success">
+                        <h4>"桃花运加持,<br>这就把纯洁的拼车友谊<br>升华一下~"</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="page" id="pages5">
+                <div class="inner">
+                    <div class="score">
+                        <img src="img/page_result_bad_0.png" alt="" />
+                    </div>
+                    <div class="anwei"></div>
+                    <div class="restart"></div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="js/jquery-2.2.3.min.js" charset="utf-8"></script>
+    <script src="js/index.js" charset="utf-8"></script>
+
+</html>
